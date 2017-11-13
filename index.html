@@ -14,7 +14,7 @@
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Фото и видео</a></li>
 				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
+				<li><a href="hotels.html">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -116,8 +116,18 @@
 		</footer>
 		<section class="modal">
 			<h2>Поиск гостиницы в Седоне</h2>
-			<!-- Форма -->
-			<a href="#" class="button">Найти</a>
+			<form action="#">
+				<label for="date-in">Дата заезда</label>
+				<input type="text" id="date-in" value="24 апреля 2017"> <br>
+				<label for="date-out">Дата выезда</label>
+				<input type="text" id="date-out" value="4 июля 2017"> <br>
+				<label for="adult">Взрослые</label>
+				<input type="text" id="adult" value="2">
+				<label for="children">Дети</label>
+				<input type="text" id="children" value="0"> <br>
+				<button>Найти</button>
+			</form>
+			
 		</section>
 	</body>
 	</html>

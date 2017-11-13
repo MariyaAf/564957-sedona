@@ -14,7 +14,7 @@
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Фото и видео</a></li>
 				<li><a href="#">Карта штата</a></li>
-				<li><a site-navigation-active>Гостиницы</a></li>
+				<li><a class="site-navigation-active">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -22,7 +22,45 @@
 		<h1 class="visually-hidden">Гостиницы в Седоне</h1>
 		<section class="filtres">
 			<h2 class="visually-hidden">Фильтр Гостиниц</h2>
-			<!-- Форма -->
+			<form action="#">
+				<div class="infrastructure">
+					<b>Инфраструктура</b> <br>
+					<input type="checkbox" id="pool" name="pool" checked>
+					<label for="pool">Бассейн</label><br>
+					<input type="checkbox" id="parking" name="parking">
+					<label for="parking">Парковка</label><br>
+					<input type="checkbox" id="wifi" name="wifi">
+					<label for="wifi">Wi-Fi</label>
+				</div>
+				<div class="habitation">
+					<b>Тип жилья</b> <br>
+					<input type="checkbox" id="hotel" name="hotel" checked>
+					<label for="hotel">Гостиница</label><br>
+					<input type="checkbox" id="motel" name="motel" checked>
+					<label for="motel">Мотель</label><br>
+					<input type="checkbox" id="apartament" name="apartament" checked>
+					<label for="apartament">Апартаменты</label>
+				</div>
+				<div class="cost">
+					<b>Стоимость в сутки (р)</b> <br>
+					<span>от</span>
+					<output name="min">0</output>
+					<span>до</span>
+					<output name="max">3000</output><br>
+					<input type="range" min="0" max="3000" step="1" multiple><br>
+					<button>Показать</button>
+				</div>
+				<div class="search">
+					<b>Найдено:</b> 
+					<output>3</output>
+					<ul>
+						<li>Сортировка</li>
+						<li><a class="search-active">По цене</a></li>
+						<li><a href="#">По типу</a></li>
+						<li><a href="#">По рейтингу</a></li>
+					</ul>
+				</div>
+			</form>
 		</section>
 		<section class="hotels">
 			<ul>

@@ -62,12 +62,11 @@ a {
 	font-weight: 700;
 	color: #000000;
 	line-height: 26px;
-	text-align: center;
 
 }
 .subtitle {
 	line-height: 26px;
-	text-align: center;
+	margin-bottom: 50px;
 }
 .advantages-number-one,
 .advantages-number-two
@@ -79,6 +78,8 @@ a {
 	font-size: 21px;
 	font-weight: 700;
 	color: #ffffff;
+	    width: 215px;
+    padding-left: 33px;
 }
 
 .advantages-number-one .number,
@@ -99,6 +100,7 @@ a {
 	background-repeat: no-repeat;
 	width: 75px;
 	height: 72px;
+	text-align: center;
 }
 .food {
 	background-image: url(../img/icon-3.svg);
@@ -111,6 +113,13 @@ a {
 	background-repeat: no-repeat;
 	width: 64px;
 	height: 76px;
+}
+.home,
+.food,
+.lagniappe 
+{
+	margin-left: 115px;
+	margin-bottom: 32px;
 }
 .number {
 	font-weight: 400;
@@ -132,6 +141,7 @@ a {
 .footer-social a img {
 	background-color: #81b3d2;
 }
+
 .modal h2 a{
 	font-size: 21px;
 	font-weight: 700;
@@ -239,7 +249,8 @@ a.search-active {
 	font-weight: 700;
 }
 .hotels span,
-b 
+.hotels b
+
 {
 	font-size: 14px;
 	color: #333333;
@@ -277,4 +288,216 @@ b
 	line-height: 21px;
 	color: #666666;
 	background-color: #f2f2f2;
+}
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 2762px;
+}
+
+.main-navigation {
+	position: relative;
+	width: 100%;
+}
+
+.site-navigation {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.site-navigation li {
+	width: 20%;
+	height: 50px;
+	text-align: center;
+	padding-top: 15px;
+}
+.site-navigation li:nth-child(2) {
+	margin-right: 20%;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 70px;
+}
+
+.head-note {
+	display: flex;	
+	min-height: 504px;
+	flex-direction: column;
+	text-align: center;
+}
+.head-note h1 {
+	min-height: 23px;
+}
+.sedona-description {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.advantages h2 {
+	width: 440px;
+	padding-left: 380px;
+	padding-top: 35px;
+}
+.advantages-big {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+}
+.advantages-number-one,
+.advantages-number-two
+ {
+	display: flex;
+	flex-direction: row;
+	height: 256px;
+
+}
+.advantages-number-one-description,
+.advantages-number-two-description
+ {
+	text-align: center;
+    padding-left: 60px;
+    padding-top: 34px;
+    margin-right: 52px;
+}
+.advantages-description {
+	width: 288px;
+}
+.photo img {
+	height: 256px;
+	width: 800px;
+	margin-top: -14px;
+}
+.advantages-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 58px;
+	padding-bottom: 68px;
+}
+.advantages-item li {
+	width: 305px;
+	text-align: center;
+}
+
+.advantages-item-two {
+	background-color: #eeeeee;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 52px;
+	padding-bottom: 62px;
+} 
+.advantages-item-two li {
+	text-align: center;
+}
+.advantages-item-two .advantages-description {
+	width: 276px;
+
+}
+.advantages-item-two .advantages-item-title {
+	width: 120px;
+	padding-left: 75px;
+	margin: 0;
+}
+.maps {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.maps span {
+	margin-top: 38px;
+	margin-bottom: 14px;
+}
+.maps p {
+    padding-bottom: 121px;
+}
+.maps img {
+	width: 100%;
+	height: 472px;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.modal {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 568px;
+	height: 480px;
+	padding-left: 290px;
+}
+.filter-header {
+	display: flex;
+	flex-direction: row;
+	min-height: 217px;
+}
+.infrastructure {
+	padding-top: 32px;
+	padding-left: 72px;
+}
+.habitation {
+	padding-top: 32px;
+	padding-left: 112px;
+}
+.cost {
+	padding-top: 32px;
+	padding-left: 345px;
+}
+.search {
+	display: flex;
+	flex-direction: row;
+	padding-top: 35px;
+	padding-left: 72px;
+}
+.search ul {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+}
+.search ul li {
+	padding-left: 39px;
+	padding-top: 5px;
+}
+.hotels {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+}
+.hotels ul {
+	margin: 0;
+	padding: 0;
+}
+.hotels li {
+	display: flex;
+	flex-direction: row;
+	height: 150px;
+	
+}
+.hotels-photo {
+	margin-top: 57px;
+	margin-left: 72px;
+}
+.hotel-descriprion {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.rating {
+	margin-top: 30px;
+	margin-left: 525px;
+	height: 26px;
 }

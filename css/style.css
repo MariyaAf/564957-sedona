@@ -292,12 +292,6 @@ a.search-active {
 /* ----- Сеточные стили ----- */
 
 
-html,
-body {
-  min-width: 1200px;
-  min-height: 2762px;
-}
-
 .main-navigation {
 	position: relative;
 	width: 100%;

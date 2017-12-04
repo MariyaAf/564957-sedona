@@ -51,14 +51,20 @@
 							<input type="checkbox" id="apartament" name="apartament" checked>
 							<label for="apartament">Апартаменты</label>
 						</div>
-						<div class="cost">
-							<b>Стоимость в сутки (р)</b> <br>
-							<span>от</span>
-							<output name="min">0</output>
-							<span>до</span>
-							<output name="max">3000</output><br>
-							<input type="range" min="0" max="3000" step="1" multiple><br>
-							<button class="show">Показать</button>
+						<div class="filter-range">
+							<div class="filter-range-title">Стоимость в сутки (р):</div>
+							<div class="price-controls">
+								<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+								<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+							</div>
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="range-toggle range-toggle-min"></div>
+								<div class="range-toggle range-toggle-max"></div>
+							</div>
+							<button class="btn-transparent" type="submit">Показать</button>
 						</div>
 					</div>
 					<div class="search">
@@ -68,55 +74,77 @@
 							<li class="sort">Сортировка:</li>
 							<li><a class="search-active">По цене</a></li>
 							<li><a href="#">По типу</a></li>
-							<li><a href="#">По рейтингу</a></li>
+							<li class="rat"><a href="#">По рейтингу</a></li>
 						</ul>
+						<div class="arrows">
+							<button class="up"></button>
+							<button class="down"></button>
+						</div>
 					</div>
 				</form>
 			</section>
 			<section class="hotels">
 				<ul>
-					<li>
+					<li class="cart">
 						<p class="hotels-photo">
 							<img src="img/first-hotel.jpg" width="135" height="90" alt="Фото первой гостиницы">
 						</p>
 						<div class="hotel-descriprion">
 							
-						<h3>Amara Resort&Spa</h3>
-						<span>Гостиница от</span> <b>400 Р.</b>
-						<p>
-							<a href="#">Подробнее</a>
-							<a href="#">Забронировать</a>
-						</p>
+							<h3>Amara Resort&Spa</h3>
+							<span>Гостиница </span> <b>от 400 Р.</b>
+							<p>
+								<a href="#">Подробнее</a>
+								<a href="#">Забронировать</a>
+							</p>
 						</div>
+
+							<ul class="stars">
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
 						<span class="rating">Рейтинг: 8,5</span>
 					</li>
-					<li>
-							<p class="hotels-photo">
+					<li class="cart">
+						<p class="hotels-photo">
 							<img src="img/second-hotel.jpg" width="135" height="90" alt="Фото второй гостиницы">
 						</p>
 						<div class="hotel-descriprion">
-						<h3>Desert Quail Inn</h3>
-						<span>Мотель от</span> <b>300 Р.</b>
-						<p>
-							<a href="#">Подробнее</a>
-							<a href="#">Забронировать</a>
-						</p>
-					</div>
+							<h3>Desert Quail Inn</h3>
+							<span>Мотель </span> <b>от 300 Р.</b>
+							<p>
+								<a href="#">Подробнее</a>
+								<a href="#">Забронировать</a>
+							</p>
+							
+						</div>
+						<ul class="stars">
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
 						<span class="rating">Рейтинг: 8,9</span>
 					</li>
-					<li>
+					<li class="cart">
 						<p class="hotels-photo">
 							<img src="img/third-hotel.jpg" width="135" height="90" alt="Фото третьей гостиницы">
 						</p>
 						<div class="hotel-descriprion">
-						<h3>Villas At Poco Diablo</h3>
-						<span>Апартаменты от</span> <b>2000 Р.</b>
-						<p>
-							<a href="#">Подробнее</a>
-							<a href="#">Забронировать</a>
-						</p>
-					</div>
+							<h3>Villas At Poco Diablo</h3>
+							<span>Апартаменты </span> <b>от 2000 Р.</b>
+							<p>
+								<a href="#">Подробнее</a>
+								<a href="#">Забронировать</a>
+							</p>
+						</div>
+						<ul class="stars">
+								<li></li>
+								<li></li>
+							</ul>
 						<span class="rating">Рейтинг: 9,2</span>
+
 					</li>
 				</ul>
 			</section>

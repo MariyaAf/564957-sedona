@@ -12,7 +12,6 @@ body {
 }
 .main {
 	width: 1200px;
-	padding: auto;
 	margin: auto;
 	position: relative;
 }
@@ -419,7 +418,6 @@ footer {
 	
 	color: #000000;
 	font-weight: 700;
-	text-align: 26px;
 	border: none;
 	background-color: #f2f2f2;
 }
@@ -488,7 +486,9 @@ label[for="children"] {
 	outline: none;
 }
 .minus,
-.plus 
+.plus,
+.minus-adult,
+.plus-adult
 {
 	position: absolute;
 	width: 11px;
@@ -501,12 +501,24 @@ label[for="children"] {
 	background-image: url(../img/minus.png);
 	background-repeat: no-repeat;
 	margin-left: -102px;
-	margin-top: 33px;
+	margin-top: 20px;
+}
+.minus-adult {
+	background-image: url(../img/minus.png);
+	background-repeat: no-repeat;
+	margin-top: -25px;
+	margin-left: 13px;
+}
+.plus-adult {
+	background-image: url(../img/plus.png);
+	background-repeat: no-repeat;
+	margin-top: -29px;
+	margin-left: 89px;
 }
 .plus {
 	background-image: url(../img/plus.png);
-	margin-top: 28px;
-	margin-left: -26px;
+	margin-top: 15px;
+	margin-left: -25px;
 	background-repeat: no-repeat;
 }
 .minus:hover {

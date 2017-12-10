@@ -189,7 +189,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-around;
 	margin: 0;
 	padding: 0;
-	padding-top: 58px;
+	padding-top: 56px;
 	padding-bottom: 68px;
 }
 .advantages-item li {
@@ -218,7 +218,8 @@ input[type="radio"].visually-hidden {
 }
 .advantages-item-two .advantages-description {
 	width: 276px;
-	padding: 10px;
+	padding: 11px;
+	margin-top: 11px;
 }
 .advantages-item-two .advantages-item-title {
 	width: 120px;
@@ -258,7 +259,7 @@ input[type="radio"].visually-hidden {
 .number {
 	font-weight: 400;
 	display: block;
-	margin-top: 25px;
+	margin-top: 23px;
 }
 .maps {
 	display: flex;
@@ -271,10 +272,11 @@ input[type="radio"].visually-hidden {
 	line-height: 36px;
 	color: #000000;
 	margin-top: 46px;
-	margin-bottom: 14px;
+	margin-bottom: 11px;
 }
 .maps p {
-	padding-bottom: 121px;
+	padding-bottom: 117px;
+	line-height: 24px;
 }
 .maps img {
 	width: 100%;
@@ -552,12 +554,13 @@ label[for="children"] {
 }
 .habitation {
 	display: block;
-	padding-top: 28px;
-	padding-left: 125px;
+	padding-top: 27px;
+	padding-left: 122px;
 }
 .habitation b {
 	display: inline-block;
 	margin-bottom: 24px;
+	font-size: 16px;
 }
 .infrastructure b {
 	font-size: 16px;
@@ -573,7 +576,7 @@ label[for="children"] {
 .habitation label {
 	display: block;
 	position: relative;
-	padding-left: 40px;
+	padding-left: 42px;
 	margin-bottom: 25px;
 }
 .infrastructure label:before,
@@ -612,6 +615,10 @@ label[for="children"] {
 .habitation input:checked + label:after {
 	opacity: 1;
 }
+.infrastructure input:checked + label:before,
+.habitation input:checked + label:before {
+	opacity: 0;
+}
 .filter-range {
 	width: 317px;
 	color: #ffffff;
@@ -626,12 +633,15 @@ label[for="children"] {
 	line-height: 21px;
 }
 .price-controls {
+	display: flex;
+	align-items: center;
 	position: relative;
-	height: 31px;
 	margin-bottom: 20px;
 	font-size: 0;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
+	padding-top: 6px;
+	padding-bottom: 4px;
 }
 .price-controls::after {
 	content: "";
@@ -644,21 +654,18 @@ label[for="children"] {
 	transform: translate(-50%, -50%);
 }
 .price-controls label {
-	display: inline-block;
 	font-size: 14px;
-	line-height: 38px;
-	vertical-align: top;
 	cursor: pointer;
 }
 .price-controls .min-price,
 .price-controls .max-price {
 	width: 84px;
 	padding-left: 63px;
-	margin-top: -5px;
 }
 .price-controls input {
 	width: 50px;
 	margin: 0;
+	padding: 0;
 	color: inherit;
 	font: inherit;
 	background: none;
@@ -747,8 +754,13 @@ label[for="children"] {
 	padding-left: 15px;
 }
 .search ul li {
-	padding-left: 33px;
+	padding-left: 32px;
 	padding-top: 5px;
+	padding-right: 8px;
+}
+.search ul li:nth-child(3) {
+	padding-left: 25px;
+	padding-right: 0;
 }
 .search a {
 	font-size: 12px;
@@ -843,7 +855,7 @@ a.search-active {
 .hotels {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 123px;
+	padding-bottom: 120px;
 }
 .hotels ul {
 	margin: 0;
@@ -857,7 +869,7 @@ a.search-active {
 	border-bottom: 1px solid #e5e5e5;
 }
 .cart:nth-child(2) b {
-	padding-left: 63px;
+	padding-left: 61px;
 }
 .cart:nth-child(3) b {
 	padding-left: 19px;
@@ -874,7 +886,7 @@ a.search-active {
 	margin: 0;
 }
 .hotel-descriprion b {
-	padding-left: 37px;
+	padding-left: 36px;
 }
 .stars {
 	display: flex;
